@@ -18,7 +18,7 @@
 We can format the details of the Cert. into one string and automate the creation of the Self-signed certificate.
 
 ```
--subj "/C=UK/ST=Greater London/L=London/O=IndexFeed/OU=DevOps Dept. /CN=nexus.cards.idx.zone/emailAddress=sunil.tailor@lloydsbanking.com"
+-subj "/C=UK/O=IndexFeed/OU=DevOps Dept. /CN=nexus.cards.idx.zone"
 ```
 
 ```
