@@ -29,6 +29,14 @@ openssl req -x509 -nodes -days 365 \
 -subj "/C=UK/ST=Greater London/L=London/O=IndexFeed/OU=DevOps Dept. /CN=nexus.cards.idx.zone/emailAddress=sunil.tailor@lloydsbanking.com"
 ```
 
+* `req`
+* `-509`
+* `-nodes`
+* `-days 365`
+* `-newkey`
+* `-out`
+* `-subj`
+
 
 ## How to clean up docker
 

@@ -8,6 +8,8 @@ services:
       - "nexus-data:/nexus-data"
     ports:
       - "8081:8081"
+      - "8082:8082"
+      - "8083:8083"
     networks:
       - nginx-net
 
@@ -23,8 +25,6 @@ services:
       - "443:443"
     networks:
       - nginx-net
-    links:
-      - nexus
 
 volumes:
   nexus-data: {}

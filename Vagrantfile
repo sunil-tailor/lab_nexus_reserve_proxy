@@ -8,7 +8,7 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/xenial64"
   config.vm.network "public_network"
-  
+
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
   # `vagrant box outdated`. This is not recommended.
@@ -29,7 +29,6 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision :docker
   config.vm.provision :docker_compose
-
   #,
   #    yml: "/Users/sunil/devops/docker/lab_nexus_reverse_proxy/docker-compose.yaml",
   #    run: "always"
@@ -45,6 +44,6 @@ Vagrant.configure("2") do |config|
   #   apt-get install -y apache2
   # echo pwd
   # whoami
-  #    sed -i 's/127.0.0.1 localhost/127.0.0.1 localhost nexus.cards.idx.zone/g' /etc/hosts
+  #    sed -i 's/127.0.0.1	localhost/127.0.0.1	localhost nexus.cards.idx.zone/g' /etc/hosts
   # SHELL
 end
