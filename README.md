@@ -26,7 +26,7 @@ openssl req -x509 -nodes -days 365 \
 -newkey rsa:2048 \
 -keyout nginx-selfsigned.key \
 -out nginx-selfsigned.crt \
--subj "/C=UK/ST=Greater London/L=London/O=IndexFeed/OU=DevOps Dept. /CN=nexus.cards.idx.zone/emailAddress=sunil.tailor@lloydsbanking.com"
+-subj "/C=UK/O=IndexFeed/OU=DevOps Dept. /CN=nexus.cards.idx.zone"
 ```
 
 * `req`
