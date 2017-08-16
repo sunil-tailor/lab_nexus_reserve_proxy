@@ -7,7 +7,8 @@
 # you're doing.
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/xenial64"
-  config.vm.network "public_network"
+  config.vm.network "public_network", bridge: "en1: Wi-Fi (AirPort)"
+
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
